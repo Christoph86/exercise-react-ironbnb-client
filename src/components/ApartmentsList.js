@@ -15,7 +15,7 @@ function ApartmentsList() {
       .get(process.env.REACT_APP_API_BASE_URL + '/apartments')
       .then((response) => {
         setApartments(response.data);
-        console.log("axios response:", response.data);
+        console.log("axios Apartmentlist response:", response.data);
       })
       .catch((e) => {
         console.log(e);
